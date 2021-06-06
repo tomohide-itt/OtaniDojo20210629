@@ -25,6 +25,8 @@ namespace arr{
 		const T* get()const;
 		T* get();
 		void set( T* p );
+		T* begin(){ return vals; }
+		T* end(){ return &(vals[N-1]); }
 
 		void show( std::ostream& stream=std::cout, const int width=15, const int dec=5 )const;
 
